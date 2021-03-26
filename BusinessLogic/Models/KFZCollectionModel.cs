@@ -26,7 +26,6 @@ namespace BusinessLogic.Models
         {
             //Tür auf! Für das Event registrieren.
             Connection.KfzListeReady += Connection_KfzListeReady;
-
         }
 
         private void Connection_KfzListeReady(List<KFZ> kfzs)

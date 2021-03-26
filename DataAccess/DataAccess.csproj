@@ -34,7 +34,7 @@
       <HintPath>..\CommonTypes\bin\Debug\CommonTypes.dll</HintPath>
     </Reference>
     <Reference Include="Mk.DBConnector">
-      <HintPath>..\WpfApplication1\bin\Debug\Mk.DBConnector.dll</HintPath>
+      <HintPath>..\Zubehoer\Mk.DBConnector.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

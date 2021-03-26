@@ -34,11 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BusinessLogic">
-      <HintPath>..\BusinessLogic\bin\Debug\BusinessLogic.dll</HintPath>
-    </Reference>
     <Reference Include="CommandHelper">
-      <HintPath>..\..\WpfApp\WpfApp\WpfApp\bin\Debug\CommandHelper.dll</HintPath>
+      <HintPath>..\Zubehoer\CommandHelper.dll</HintPath>
     </Reference>
     <Reference Include="CommonTypes">
       <HintPath>..\CommonTypes\bin\Debug\CommonTypes.dll</HintPath>
@@ -109,6 +106,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{06d7d746-1601-4199-9087-9a0efe8ed58e}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

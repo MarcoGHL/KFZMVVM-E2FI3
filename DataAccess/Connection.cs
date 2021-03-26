@@ -20,16 +20,14 @@ namespace DataAccess
             // Testcomment
             try
             {
-                Connection.Adapter = new DBAdapter(DatabaseType.MySql, Instance.NewInstance, "localhost", 3306, "kfzka", "ukfz", "ukfz", "logdatei.log");
+                Connection.Adapter = new DBAdapter(DatabaseType.MySql, Instance.NewInstance, "localhost", 3306, "kfz", "root", "", "logdatei.log");
                 Connection.Adapter.Adapter.LogFile = true;
                 IsConnected = true;
             }
             catch (Exception)
             {
-
                 IsConnected = false;
             }
-
         }
 
         public static bool IsConnected { get; set; }

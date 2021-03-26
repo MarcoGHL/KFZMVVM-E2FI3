@@ -7,7 +7,6 @@ using System.Data;
 using System.Net;
 using System.IO;
 using System.Xml;
-using System;
 using System.Xml.Serialization;
 
 namespace CommonTypes

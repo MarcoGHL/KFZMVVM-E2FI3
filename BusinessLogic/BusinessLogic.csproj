@@ -33,9 +33,6 @@
     <Reference Include="CommonTypes">
       <HintPath>..\CommonTypes\bin\Debug\CommonTypes.dll</HintPath>
     </Reference>
-    <Reference Include="DataAccess">
-      <HintPath>..\DataAccess\bin\Debug\DataAccess.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,6 +47,12 @@
     <Compile Include="Models\KFZCollectionModel.cs" />
     <Compile Include="Models\KFZModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{b72920b6-69c1-4321-88ed-43e38d318db2}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
